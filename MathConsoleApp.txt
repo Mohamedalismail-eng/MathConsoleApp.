@@ -1,0 +1,24 @@
+using System;
+
+class MathOperations
+{
+    public void DoMath(int num1, int num2)
+    {
+        int result = num1 * 2; // Multiply first number by 2
+        Console.WriteLine("The result of the math operation is: " + result); // Show result
+        Console.WriteLine("The second number is: " + num2); // Show second number
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        MathOperations mathOps = new MathOperations(); // Create object from class
+
+        mathOps.DoMath(5, 10); // Call method with numbers
+        mathOps.DoMath(num1: 7, num2: 3); // Call method using parameter names
+
+        Console.ReadLine(); // Keep the window open (used in real apps)
+    }
+}
